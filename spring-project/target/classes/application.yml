@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    druid:
+      url: "jdbc:mysql://localhost:3306/worktest1?useSSL=false&characterEncoding=UTF-8"
+      username: "root"
+      password: "123456"
+      driver-class-name: "com.mysql.cj.jdbc.Driver"
+
+
+  web:
+    resources:
+      static-locations: classpath:/static/dist
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+

@@ -1,0 +1,36 @@
+create table class
+(
+    id           int auto_increment
+        primary key,
+    className    varchar(200) null,
+    studentCount int          null,
+    classId      int          null
+);
+
+INSERT INTO worktest1.class (className, studentCount, classId) VALUES ('软件3216', 44, 1);
+INSERT INTO worktest1.class (className, studentCount, classId) VALUES ('软件3215', 43, 2);
+INSERT INTO worktest1.class (className, studentCount, classId) VALUES ('软件3214', 40, 3);
+INSERT INTO worktest1.class (className, studentCount, classId) VALUES ('软件3213', 42, 4);
+INSERT INTO worktest1.class (className, studentCount, classId) VALUES ('软件3212', 41, 5);
+
+
+
+
+
+create table student
+(
+    id            int auto_increment
+        primary key,
+    username      varchar(200) null,
+    password      varchar(200) null,
+    name          varchar(200) null,
+    className     varchar(100) null,
+    studentNumber varchar(20)  null
+);
+
+INSERT INTO worktest1.student (username, password, name, className, studentNumber) VALUES ('1111', '1111', '何超', '软件3216', '30602210637');
+INSERT INTO worktest1.student (username, password, name, className, studentNumber) VALUES ('222', '222', '222', '软件3222', '30602210637');
+INSERT INTO worktest1.student (username, password, name, className, studentNumber) VALUES ('3333', '333', '333', '软件3333', '30602210637');
+INSERT INTO worktest1.student (username, password, name, className, studentNumber) VALUES ('444', '444', '444', '软件2222', '30602210637');
+INSERT INTO worktest1.student (username, password, name, className, studentNumber) VALUES ('555', '555', '555', '软件1111', '30602210637');
+INSERT INTO worktest1.student (username, password, name, className, studentNumber) VALUES ('777', '777', '何超1', '软件3555', '30602210637');
